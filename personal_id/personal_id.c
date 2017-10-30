@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* Create a persolan ID registers
+/* Create a personal ID registers
  * You should store the following data in a structure, called "person":
  * - the name of the person (which is shorter than 256 characters)
  * - the year of the birth (1990)
