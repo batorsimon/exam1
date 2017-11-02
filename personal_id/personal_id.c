@@ -21,5 +21,5 @@
  *    - it should return the age of the oldest person
  * - get_qualification_count()
  *    - it returns the count of persons which has "quali" qualification
- * For both functions you have add the needed parameters!
+ * For both functions you have to add the needed parameters!
  */
