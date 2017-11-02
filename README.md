@@ -27,7 +27,7 @@ The application is accepted if:
 - The code is clean, without unnecessary repetition, and with descriptive names
 - You commit frequently with descriptive commit messages
 
-## . Question time! (~15 mins) [4p]
+## . Question time! (~15 mins) [3p]
 
 ### We have declared and initialized a variable and a pointer in the following way. [1p]
 `int a = 10;`
@@ -39,10 +39,11 @@ The application is accepted if:
 #### Your answer:
 [add your answer here]
 
+### Why and how do we use the `typedey` keyword?
 
 #### Your answer:
 [add your answer here]
 
-
+### When do we use `enum`?
 #### Your answer:
 [add your answer here]
