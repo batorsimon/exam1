@@ -27,23 +27,19 @@ The application is accepted if:
 - The code is clean, without unnecessary repetition, and with descriptive names
 - You commit frequently with descriptive commit messages
 
-## . Question time! (~15 mins) [3p]
+## Question time! (~15 mins) [4p]
 
-### We have declared and initialized a variable and a pointer in the following way. [1p]
-`int a = 10;`
-
-`int *p;`
-
-`p = &a;`
-### What will `printf("%d\n", *p)` it print out?
-#### Your answer:
-[add your answer here]
-
-### Why and how do we use the `typedey` keyword?
+### Why and how do we use .c and .h files? [2p]
 
 #### Your answer:
 [add your answer here]
 
-### When do we use `enum`?
+### Why and how do we use the `typedey` keyword? [1p]
+
+#### Your answer:
+[add your answer here]
+
+### When do we use `enum`? [1p]
+
 #### Your answer:
 [add your answer here]
