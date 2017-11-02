@@ -17,7 +17,9 @@
  * The "person" -s are stored in an array.
  *
  * Implement the following functions:
- * - get_oldest_alive(struct person* array, int array_length)
+ * - get_oldest_alive()
  *    - it should return the age of the oldest person
- * - get_qualification_count(struct person* array, int array_length, enum qualification quali)
+ * - get_qualification_count()
  *    - it returns the count of persons which has "quali" qualification
+ * For both functions you have add the needed parameters!
+ */
