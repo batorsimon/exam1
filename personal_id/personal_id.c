@@ -34,17 +34,19 @@ E.g.initialize your persons in main() with 4 elements in order to be able to tes
 
 int get_oldest_alive()
 {
-    return age;
+   // return age;
 
 }
 
 int get_qualificaton_count()
 {
 
-    return counter;
+
+   // return counter;
 }
  int main()
  {
+     ID arr[10];
 
      return 0;
  }
