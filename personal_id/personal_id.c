@@ -58,11 +58,12 @@ int get_oldest_alive(ID *arr)
 {
     int i = 0;
     int age = 0;
-    for(i = 0; arr[i].birth_date != '\0'; i++){
+    for(i = 0; i < sizeof arr; i++){
         if(age > arr[i].birth_date){
             age = arr[i].birth_date;
         }
     }
+    age = (2017 - age);
     return age;
 
 }
@@ -80,11 +81,11 @@ int get_qualificaton_count(ID *arr, char *pointer)
 }
  int main()
  {
-     ID arr[10];
-     filling_structure(arr);
+    ID arr[10];
+    filling_structure(arr);
 
-     int returned_age = get_oldest_alive(arr);
-     printf("The age of the oldest person: %d\n", returned_age);
+    int returned_age = get_oldest_alive(arr);
+    printf("The age of the oldest person: %d\n", returned_age);
 
     char comparison[20] = "PHD";
     int returned_count = get_qualificaton_count(arr, comparison);
