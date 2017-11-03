@@ -50,23 +50,9 @@ void reversing(char *arr, char *reversed)
     }
     temp2[a] = '\0';
 
-
-    /*
-    for(i = 0; temp[i] != '\0'; i++)
-    {
-        reversed[i] = temp[i];
-    }
-    a = 0;
-    for(i; temp2[a] != '\0'; i++)
-    {
-        reversed[i] = temp2[a];
-        a++;
-    }
-    reversed[i] = '\0';
-    */
-
     strcpy(reversed, temp);
     strcat(reversed, temp2);
+
     printf("The name switched and reversed: %s\n", reversed);
 }
 
