@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /* Create a personal ID registers
  * You should store the following data in a structure, called "person":
@@ -32,6 +33,27 @@ E.g.initialize your persons in main() with 4 elements in order to be able to tes
     char qualification[30];
  } ID;
 
+ void filling_structure(ID *arr)
+ {
+     strcpy(arr[0].person, "John Smith");
+     strcpy(arr[1].person, "John Wick");
+     strcpy(arr[2].person, "Matt Damon");
+     strcpy(arr[3].person, "Dave Mirra");
+     strcpy(arr[4].person, "Kiss Balazs");
+
+     arr[0].birth_date = 1993;
+     arr[1].birth_date = 1981;
+     arr[2].birth_date = 1968;
+     arr[3].birth_date = 1972;
+     arr[4].birth_date = 1984;
+
+     strcpy(arr[0].qualification, "Elementary School");
+     strcpy(arr[1].qualification, "High School");
+     strcpy(arr[2].qualification, "BSC degree");
+     strcpy(arr[3].qualification, "Master degree");
+     strcpy(arr[4].qualification, "PHD");
+
+ }
 int get_oldest_alive()
 {
    // return age;
@@ -47,6 +69,9 @@ int get_qualificaton_count()
  int main()
  {
      ID arr[10];
+     filling_structure(arr);
+
+     printf("%s", arr);
 
      return 0;
  }
