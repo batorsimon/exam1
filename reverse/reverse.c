@@ -49,28 +49,30 @@ void reversing(char *arr, char *reversed)
         a++;
     }
     temp2[a] = '\0';
-    //printf("The name switched and reversed: %s%s\n", temp, temp2);
 
+
+    /*
     for(i = 0; temp[i] != '\0'; i++)
     {
         reversed[i] = temp[i];
     }
-
     a = 0;
-    for(j = i-1; temp2[a] != '\0'; i++)
+    for(i; temp2[a] != '\0'; i++)
     {
-        reversed[j] = temp[a];
+        reversed[i] = temp2[a];
         a++;
     }
     reversed[i] = '\0';
-    printf("The name switched and reversed: %s\n", reversed);
+    */
 
+    strcpy(reversed, temp);
+    strcat(reversed, temp2);
+    printf("The name switched and reversed: %s\n", reversed);
 }
 
 int main()
 {
     char arr[] = "Green Fox";
-    //gets(arr);
     char reversed[50];
     reversing(arr, reversed);
 
