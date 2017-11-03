@@ -21,7 +21,22 @@ void reversing(char *arr, char *reversed)
         temp[i] = arr[i];
     }
 
+    int j = 0;
+    for(i = i+1; arr[i] != '\0'; i++) {
+        reversed[j] = arr[i];
+        j++;
+    }
+    reversed[j] = ' ';
+    reversed[j+1] = '\0';
 
+    for(i = 0; reversed[i] != '\0'; i++);  //stores the length of reversed name
+
+    for(j = 0; temp[j] != '\0'; j++, i++)
+    {
+        reversed[i] = temp[j];
+    }
+    reversed[i] = '\0';
+    printf("The name reversed: %s\n", reversed);
 }
 
 int main()
