@@ -12,7 +12,16 @@
  * print out : "invalid parameter"
  */
 
- int main() {
+void reversing(char *arr, char *reversed)
+{
 
-   return 0;
+}
+
+int main()
+{
+    char arr[] = "Green Fox";
+    char reversed[50];
+    reverseing(arr, reversed);
+
+    return 0;
  }
