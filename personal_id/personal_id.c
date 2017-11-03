@@ -54,24 +54,41 @@ E.g.initialize your persons in main() with 4 elements in order to be able to tes
      strcpy(arr[4].qualification, "PHD");
 
  }
-int get_oldest_alive()
+int get_oldest_alive(ID *arr)
 {
-   // return age;
+    int i = 0;
+    int age = 0;
+    for(i = 0; arr[i].birth_date != '\0'; i++){
+        if(age > arr[i].birth_date){
+            age = arr[i].birth_date;
+        }
+    }
+    return age;
 
 }
 
-int get_qualificaton_count()
+int get_qualificaton_count(ID *arr, char *pointer)
 {
-
-
-   // return counter;
+    int i = 0;
+    int counter = 0;
+    for(i = 0; i < sizeof arr; i++){
+        if(strcmp(arr[i].qualification, pointer) == 0){
+            counter++;
+        }
+    }
+    return counter;
 }
  int main()
  {
      ID arr[10];
      filling_structure(arr);
 
-     printf("%s", arr);
+     int returned_age = get_oldest_alive(arr);
+     printf("The age of the oldest person: %d\n", returned_age);
 
-     return 0;
+    char comparison[20] = "PHD";
+    int returned_count = get_qualificaton_count(arr, comparison);
+    printf("How many people have the given qualification: %d\n", returned_count);
+
+    return 0;
  }
