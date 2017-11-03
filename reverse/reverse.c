@@ -14,6 +14,13 @@
 
 void reversing(char *arr, char *reversed)
 {
+    char temp[50];
+    printf("Original name: %s\n\n", arr);
+    int i = 0;
+    for(i = 0; arr[i] != 32 ; i++) {
+        temp[i] = arr[i];
+    }
+
 
 }
 
@@ -21,7 +28,7 @@ int main()
 {
     char arr[] = "Green Fox";
     char reversed[50];
-    reverseing(arr, reversed);
+    reversing(arr, reversed);
 
     return 0;
  }
