@@ -22,5 +22,29 @@
  * - get_qualification_count()
  *    - it returns the count of persons which has "quali" qualification
  * For both functions you have to add the needed parameters!
- * You don't need to implement a function, which initializes the persons, just do it manually from main(). E.g. initialize your persons in main() with 4 elements in order to be able to test your 2 implemented functions if it works correctly.
+ * You don't need to implement a function, which initializes the persons, just do it manually from main().
+E.g.initialize your persons in main() with 4 elements in order to be able to test your 2 implemented functions if it works correctly.
  */
+
+ typedef struct{
+    char person[255];
+    int birth_date;
+    char qualification[30];
+ } ID;
+
+int get_oldest_alive()
+{
+    return age;
+
+}
+
+int get_qualificaton_count()
+{
+
+    return counter;
+}
+ int main()
+ {
+
+     return 0;
+ }

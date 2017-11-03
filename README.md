@@ -32,14 +32,39 @@ The application is accepted if:
 ### Why and how do we use .c and .h files? [2p]
 
 #### Your answer:
-[add your answer here]
+To separate functions and declarations from main.c, as a result we can prevent to damage our main.c, more easily change and/or delete functions.
+We can separate the functions many ways so that we can create a much more clear code, for example:
+ -logical_func.c and logical_func.h 
+ -user_input.c and user_input.h
+ -external.c and external.h
 
-### Why and how do we use the `typedey` keyword? [1p]
+We put the declartions to the .h files and the functions itselfs in the .c files.
+
+### Why and how do we use the `typedef` keyword? [1p]
 
 #### Your answer:
-[add your answer here]
+You can use it to give a type, a new name.
+Examples:
+  -for charachters:
+	typedef unsigned char BYTE;
+	BYTE  b1, b2;
+  -for structures:
+	typedef struct Books {
+  	    char title[50];
+  	    char author[50];
+   	    char subject[100];
+   	    int book_id;
+	} Book;
+
 
 ### When do we use `enum`? [1p]
 
 #### Your answer:
-[add your answer here]
+When we want to make an enumeration. We can give for example the charachters an intreger value, which is easier to use as a reference.  
+
+enum LEDS {
+    LED1 = 0,
+    Led2 = 1,
+    LED3 = 2,
+    LED4 = 3,
+};
